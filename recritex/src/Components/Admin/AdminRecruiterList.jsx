@@ -8,7 +8,7 @@ function AdminRecruiter(){
     },[])
 
     const fetchData=async()=>{
-         const response=await axios.get("http://localhost:9000/api//admin-recruiterlist",{
+         const response=await axios.get("https://r-backend-al1k.onrender.com/api//admin-recruiterlist",{
             headers:{
                 "Content-Type":"application/json"
             }
@@ -22,7 +22,7 @@ function AdminRecruiter(){
             const payload={
                 status:item.isBlock ? false : true
             }
-            const response=await axios.put(`http://localhost:9000/api/admin-recruiterblock/${item._id}`,payload,{
+            const response=await axios.put(`https://r-backend-al1k.onrender.com/api/admin-recruiterblock/${item._id}`,payload,{
                 headers:{
                     "Content-Type":"application/json"
                 }
