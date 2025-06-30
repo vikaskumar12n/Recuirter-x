@@ -18,7 +18,7 @@ function SeekerAppliedJob(){
         const payload={
             userId:temData._id
         }
-     const response= await axios.post("http://localhost:9000/api/seeker-applied",payload,{
+     const response= await axios.post("https://r-backend-al1k.onrender.com/api/seeker-applied",payload,{
             headers:{
                 "Content-Type":"application/json"
             }
