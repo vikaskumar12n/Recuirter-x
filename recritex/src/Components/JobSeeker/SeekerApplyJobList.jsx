@@ -15,7 +15,7 @@ function SeekerApplyJobList(){
  
     const getData=async()=>{
        
-     const response= await axios.get("http://localhost:9000/api/seeker-joblist",{
+     const response= await axios.get("https://r-backend-al1k.onrender.com/api/seeker-joblist",{
             headers:{
                 "Content-Type":"application/json"
             }
@@ -34,7 +34,7 @@ const handleApply=async(element)=>{
         userId:userId,
         jobId:jobId
      }
-   const response=await axios.post("http://localhost:9000/api/seeker-apply",payload,{
+   const response=await axios.post("https://r-backend-al1k.onrender.com/api/seeker-apply",payload,{
             headers:{
             "Content-Type":"application/json"   
             }
