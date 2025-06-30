@@ -8,7 +8,7 @@ function AdminSeeker(){
     },[])
 
     const fetchData=async()=>{
-         const response=await axios.get("http://localhost:9000/api/admin-seekerlist",{
+         const response=await axios.get("https://r-backend-al1k.onrender.com/api/admin-seekerlist",{
             headers:{
                 "Content-Type":"application/json"
             }
@@ -21,7 +21,7 @@ function AdminSeeker(){
     const payload={
         status:item.isBlock ? false : true
     }
-    const response=await axios.put(`http://localhost:9000/api/admin-seekerblock/${item._id}`,payload,{
+    const response=await axios.put(`https://r-backend-al1k.onrender.com/api/admin-seekerblock/${item._id}`,payload,{
         headers:{
             "Content-Type":"application/json"
         }
