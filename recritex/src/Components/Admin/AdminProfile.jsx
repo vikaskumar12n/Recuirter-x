@@ -46,7 +46,7 @@ const AdminUpdate = () => {
         formData.append('password', data.password);
         formData.append('location', data.location);
         formData.append('img', data.img[0]);
-        const response=await axios.put(`http://localhost:9000/api/admin-update/${temData._id}`,formData,{
+        const response=await axios.put(`https://r-backend-al1k.onrender.com/api/admin-update/${temData._id}`,formData,{
           headers:{
             "Content-Type":"multipart/form-data"
           }
